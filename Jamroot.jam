@@ -1,0 +1,16 @@
+import toolset ;
+import path ;
+
+toolset.flags gcc.compile OPTIONS  : -std=c++0x : unchecked ;
+path-constant SELF : . ;
+
+lib TeaFile : 
+	[ path.glob-tree $(SELF)/TeaFile : *.cpp ] : 
+	<link>static ;
+
+exe TeaFile.Test :
+     [ path.glob-tree $(SELF)/TeaFile.Test : *.cpp ] gtest TeaFile pthread :
+     <link>static <include>$(SELF) ;  
+
+lib gtest : : <name>gtest ;
+lib pthread : : <name>pthread <link>shared ; # pthread must be linked shared
