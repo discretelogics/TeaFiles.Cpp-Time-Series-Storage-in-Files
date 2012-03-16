@@ -43,13 +43,13 @@ Consult the boost build manual for other parameters.
   
 Dependencies
 ............
-  1) boost libraries: datetime and interprocess are used.
-  header only is sufficient for the library and examples. 
+
+- **boost libraries**: datetime and interprocess.
   since you will need boost.build, you will have to install the boost library anyway and can remove the Lib/boost folder
 
-  2) gtest: header and binary are required for the test application.
+- **gtest** header and binary are required for the test application.
 
-  3) gmock is not used yet, it will be used in te future
+- **gmock**, not used yet, it will be used in the future
 
 Windows
 .......
