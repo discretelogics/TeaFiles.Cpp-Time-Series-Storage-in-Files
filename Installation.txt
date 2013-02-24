@@ -1,0 +1,16 @@
+Installation of TeaTime.C++
+
+download boost 1.48 .tar
+extract it to /usr/local/
+
+install the toolset:
+cd tools/build/v2/
+bootstrap.sh
+./b2 install --prefix
+
+... try: run ./bjam in your home directory.
+
+download gtest via svn
+run cmake as described in http://code.google.com/p/googletest/source/browse/trunk/README
+make
+now have 2 libs
