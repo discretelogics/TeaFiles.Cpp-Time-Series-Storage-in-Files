@@ -10,7 +10,7 @@ using boost::gregorian::days;
 namespace teatime {
 
 const int64 Epoch1400 = 510974; // number of days between 1.1.1 and 1.1.1400
-const int64 Epoch1970 = 719162; // number of days between 1.1.1 and 1.1.1400
+const int64 Epoch1970 = 719162; // number of days between 1.1.1 and 1.1.1970
 
 Time::Time(int64 ticks)
 {
