@@ -18,7 +18,7 @@ public:
   static TimeScale& Java();
   static TimeScale& Net();
 
-  TimeScale(int64 epoch=0, int64 ticksPerDay=0);
+  TimeScale(int64 epoch, int64 ticksPerDay);
 
   int64 Epoch() const;
   int64 TicksPerDay() const;
