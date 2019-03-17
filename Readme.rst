@@ -57,7 +57,7 @@ Windows
 
 TeaFiles - C++ API
 ------------------
-The TeaFile subfolder holds the C++ API provided as open source and licensed under the GPL . This API implements the TeaFile including fast data access via memory mapping.
+This code is licensed under the MIT license . This API implements the TeaFile including fast data access via memory mapping.
 
 TeaFiles.Test
 -------------
